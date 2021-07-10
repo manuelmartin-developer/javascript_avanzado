@@ -38,11 +38,11 @@ class Gallery {
     }
 
     getRandomCivil(civilImages) {
-        return this.civilImages[Math.floor(Math.random()*5)];
+        return this.civilImages[Math.floor(Math.random()*this.civilImages.length)];
     }
     
     getRandomMilitary(militaryImages) {
-        return this.militaryImages[Math.floor(Math.random()*5)];
+        return this.militaryImages[Math.floor(Math.random()*this.militaryImages.length)];
     }
     
     getAll(civilImages, militaryImages) {
@@ -50,13 +50,10 @@ class Gallery {
     }
 }
 
-
-
 class Painter {
     constructor() {
         this.createGallery();
     }
-    
     
     createGallery() {
     
@@ -81,11 +78,8 @@ class Painter {
     paintMultipleImages(arrayOfImages) {
 
          for (let i = 0; i < arrayOfImages.length; i++) {
-
-            this.paintSingleImage(arrayOfImages[i]);
-            
-         }
-         
+            this.paintSingleImage(arrayOfImages[i]);   
+         }   
     }
 }
 
