@@ -36,9 +36,7 @@ const staff = [
     },
 ];
 
-const staffPresentation = staff.map(person => {
-    return `${person.name} es ${person.role} y le gusta ${person.hobbies[0]} y ${person.hobbies[1]}`
-});
+const staffPresentation = staff.map(person => `${person.name} es ${person.role} y le gusta ${person.hobbies[0]} y ${person.hobbies[1]}`);
 console.log(staffPresentation);
 /////////////////////////////////////////////
 
@@ -92,8 +90,8 @@ const inventory = [
     }
 ];
 
-const highPriceProducts = inventory.filter(product => product.price > 300)
-    .map(product => product.name);
+const highPriceProducts = inventory .filter(product => product.price > 300)
+                                    .map(product => product.name);
 console.log(highPriceProducts);
 /////////////////////////////////////////
 // EJERCICIOS REDUCE
@@ -146,9 +144,9 @@ const books = [
     },
 ];
 
-const codeBooks = books.filter(book => book.category == "code")
-    .map(book => book.price)
-    .reduce((acc, book) => acc + book)
+const codeBooks = books .filter(book => book.category == "code")
+                        .map(book => book.price)
+                        .reduce((acc, book) => acc + book)
 
 console.log(codeBooks);
 
