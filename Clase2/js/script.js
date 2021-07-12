@@ -1,14 +1,14 @@
 // EJERCICIOS MAP
 /////////////////////////////
 const numbers = [4, 5, 6, 7, 8, 9, 10];
-console.log(numbers.map(num => Math.pow(num,num)));
+console.log(numbers.map(num => Math.pow(num, num)));
 ///////////////////////////////////
 const foodList = ["Pizza", "Ramen", "Paella", "Entrecot"];
 const coolArray = foodList.map((value, index) => {
-    return  index == 0 ? `Como soy de italia, amo comer ${value}`:
-    index == 1 ? `Como soy de Japon, amo comer ${value}`:
-    index == 2 ? `Como soy de Valencia, amo comer ${value}`:
-    `Aunque no como carne, el ${value} es sabroso`;
+    return  index == 0 ? `Como soy de italia, amo comer ${value}` :
+            index == 1 ? `Como soy de Japon, amo comer ${value}` :
+            index == 2 ? `Como soy de Valencia, amo comer ${value}` :
+            `Aunque no como carne, el ${value} es sabroso`;
 });
 
 console.log(coolArray);
@@ -66,11 +66,11 @@ const foodList2 = [
         isVeggie: false,
     },
 ];
-const veggiesFoods = foodList2  .filter(food => food.isVeggie)
-.map(food => {
-    return food.name == "Tempeh" ? `Que rico ${food.name} me voy a comer!`:
-    `Que rica ${food.name} me voy a comer`;
-});
+const veggiesFoods = foodList2.filter(food => food.isVeggie)
+    .map(food => {
+        return food.name == "Tempeh" ? `Que rico ${food.name} me voy a comer!` :
+            `Que rica ${food.name} me voy a comer`;
+    });
 console.log(veggiesFoods);
 ////////////////////////////////////////////
 const inventory = [
@@ -92,8 +92,8 @@ const inventory = [
     }
 ];
 
-const highPriceProducts = inventory   .filter(product => product.price > 300)
-.map(product => product.name);
+const highPriceProducts = inventory.filter(product => product.price > 300)
+    .map(product => product.name);
 console.log(highPriceProducts);
 /////////////////////////////////////////
 // EJERCICIOS REDUCE
@@ -113,44 +113,44 @@ const sentenceElements = [
     "fuerza",
     "con",
     "javascript",
-  ];
+];
 
-  const presentation = sentenceElements.reduce((acc, word) => `${acc} ${word}`);
-  
-  console.log(presentation);
-  ///////////////////////////////////////////
-  const books = [
-    {
-      name: " JS for dummies",
-      author: "Emily A. Vander Veer",
-      price: 20,
-      category: "code",
-    },
-    {
-      name: "Don Quijote de la Mancha",
-      author: "Cervantes",
-      price: 14,
-      category: "novel",
-    },
-    {
-      name: "Juego de tronos",
-      author: "George R. Martin",
-      price: 32,
-      category: "Fantasy",
-    },
-    {
-      name: "javascript the good parts",
-      author: "Douglas Crockford",
-      price: 40,
-      category: "code",
-    },
-  ];
+const presentation = sentenceElements.reduce((acc, word) => `${acc} ${word}`);
 
-  const codeBooks = books   .filter(book => book.category == "code")
-                            .map(book => book.price)
-                            .reduce((acc, book) => acc + book)
+console.log(presentation);
+///////////////////////////////////////////
+const books = [
+    {
+        name: " JS for dummies",
+        author: "Emily A. Vander Veer",
+        price: 20,
+        category: "code",
+    },
+    {
+        name: "Don Quijote de la Mancha",
+        author: "Cervantes",
+        price: 14,
+        category: "novel",
+    },
+    {
+        name: "Juego de tronos",
+        author: "George R. Martin",
+        price: 32,
+        category: "Fantasy",
+    },
+    {
+        name: "javascript the good parts",
+        author: "Douglas Crockford",
+        price: 40,
+        category: "code",
+    },
+];
 
-  console.log(codeBooks);
+const codeBooks = books.filter(book => book.category == "code")
+    .map(book => book.price)
+    .reduce((acc, book) => acc + book)
+
+console.log(codeBooks);
 
 
 
