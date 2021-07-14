@@ -80,7 +80,7 @@ console.log(onlyUniques(1, 5, 2, 2, 3, 3, 3, 5, 7, 9, 8));
 //? Ejercicio 6
 
 const combineAllArrays = (...arrs) => {
-    return arrs.reduce((acc, current) => acc.concat(current))
+    return arrs.reduce((acc, current) => [...acc, ...current])
 };
 
 console.log(combineAllArrays([3, 6, 7, 8], [2, 7, 3, 1], ["Tamara", "Manuel"]));
