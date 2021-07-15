@@ -85,3 +85,17 @@ arrUser.map((user) => {
 } )
 Promise.all(promiseArr)
 .then((data) => console.log(data));
+
+//! Ver para corregir
+// let githubUsers = ["silvialcastilla", "ichikonwd", "ivanqgervas", "gugohh"];
+// let promises = githubUsers.map((user) => {
+//   return fetch(`https://api.github.com/users/${user}`).then((res) =>
+//     res.json()
+//   );
+// });
+// Promise.all(promises).then((datos) => {
+//   datos.forEach((dato) => {
+//     console.log(dato.repos_url);
+//     console.log(dato.name);
+//   });
+// });
