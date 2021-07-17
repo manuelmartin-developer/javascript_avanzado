@@ -49,7 +49,7 @@
            L.tileLayer(MAPBOX_API, {
              attribution: ATTRIBUTION,
              maxZoom: 18,
-             id: "mapbox/dark-v10", // {para satellite -> satellite-streets-v11}
+             id: "mapbox/satellite-streets-v11", // {para satellite -> satellite-streets-v11}
              tileSize: 512,
              zoomOffset: -1,
              accessToken: ACCESS_TOKEN,
@@ -66,9 +66,9 @@
         .bindPopup("<b>Mi casa</b><br>Posición inicial del mapa")
         .addTo(map);
         // Ejemplo añadiendo otras coordenadas:
-        const plazaMayorCoordinates = [40.415511, -3.7095896];
-        L.marker(plazaMayorCoordinates)
-        .bindPopup("<b>Plaza Mayor</b><br>Posición adicional")
+        const cafeteriaUrbans = [39.48830304615155, -6.372611578091139];
+        L.marker(cafeteriaUrbans)
+        .bindPopup("<b>Cafeteria Urbans</b><br>Restaurante")
         .addTo(map);
 
 
