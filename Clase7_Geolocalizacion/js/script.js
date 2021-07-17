@@ -44,7 +44,7 @@
            'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
          // Este token será el que obtengamos en la web de Mapbox
          const ACCESS_TOKEN =
-           "pk.eyJ1IjoibW1hcnRpbmRqIiwiYSI6ImNrcjYxYnBnMzAxbXkydnBnemJ0eDBtZ2wifQ.JvTICi-_V8Uo5vgqyCjvfg";
+           "###";
          
            L.tileLayer(MAPBOX_API, {
              attribution: ATTRIBUTION,
