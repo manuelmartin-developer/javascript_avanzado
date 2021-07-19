@@ -1,0 +1,39 @@
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#imgPokemon_front, #imgPokemon_back{
+    width: 50% !important;
+    background-color: lightgray;
+    border-radius: 50%;
+    margin: 5px;
+    
+}
+#namePokemon{
+    align-items: center;
+}
+#vs{
+    font-size: 8rem;
+    font-weight: bold;
+}
+#dogDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#dog_image{
+    width: 20vh;
+    border-radius: 50%;
+}
